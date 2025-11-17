@@ -50,7 +50,7 @@ function SignupPage() {
           onChange={(e) => setRol(e.target.value)}
           className="form-input"
         >
-          <option value="Admin">Admin</option>
+          
           <option value="Medico">Medico</option>
           <option value="Paciente">Paciente</option>
         </select>

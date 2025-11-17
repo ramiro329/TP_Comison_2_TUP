@@ -5,6 +5,7 @@ import {
   actualizarUsuario,
   eliminarUsuario,
 } from "../services/usuariosService";
+import "../styles/MainUsuarios.css";
 
 const MainUsuarios = () => {
   const [usuarios, setUsuarios] = useState([]);
@@ -63,7 +64,8 @@ const MainUsuarios = () => {
   };
 
   return (
-    <div>
+     <div>
+     <div className="main-usuarios-container">
 
       <h2>Gestión de Usuarios</h2>
 
@@ -128,6 +130,7 @@ const MainUsuarios = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

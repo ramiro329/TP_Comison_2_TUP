@@ -1,0 +1,98 @@
+/* Fondo general */
+.main-usuarios-container {
+  background-color: #0d0d0d;
+  min-height: 100vh;
+  padding: 20px;
+  color: #f2f2f2;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Título */
+.main-usuarios-container h2 {
+  color: #ffdd00;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formulario */
+.main-usuarios-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  max-width: 400px;
+  margin: 0 auto 25px auto;
+}
+
+.main-usuarios-container input,
+.main-usuarios-container select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background: #111;
+  color: #f2f2f2;
+}
+
+.main-usuarios-container input::placeholder {
+  color: #bbb;
+}
+
+/* Botón */
+.main-usuarios-container button {
+  background: #ffdd00;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.main-usuarios-container button:hover {
+  background: #e6c600;
+}
+
+/* Tabla */
+.main-usuarios-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1a1a;
+  border: 1px solid #333;
+}
+
+.main-usuarios-container th,
+.main-usuarios-container td {
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.main-usuarios-container th {
+  background: #ffdd00;
+  color: #000;
+  font-weight: bold;
+}
+
+.main-usuarios-container td button {
+  margin: 0 5px;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.main-usuarios-container td button:first-child {
+  background: #ffdd00;
+  color: #000;
+}
+
+.main-usuarios-container td button:last-child {
+  background: #ff4242;
+  color: white;
+}
+
+.main-usuarios-container td button:last-child:hover {
+  background: #d63636;
+}

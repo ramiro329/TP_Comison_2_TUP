@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const noNavbarRoutes = ["/login", "/signup", "/", "/forgot-password",
   "/reset-password"];
-  const hideNavbar = noNavbarRoutes.some(route => location.pathname.startsWith(route));
+  const hideNavbar = noNavbarRoutes.includes(location.pathname);
 
 
   if (hideNavbar) return null;

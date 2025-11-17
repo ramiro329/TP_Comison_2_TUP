@@ -1,28 +1,20 @@
-const nodemailer = require('nodemailer');// libreria para enviar emails
-const dotenv = require('dotenv');// para leer variables de entorno
-dotenv.config(); // inicializar dotenv
+const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
+dotenv.config(); 
 
-    // configuracion del transporter de nodemailer
+    
 
 const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: 587 || 465,
-    secure: false, // esto sirve para que no falle con port 587
+    secure: false, 
     auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS
     }
 })
 
-// const enviarMailTest = async (to) =>{
-//     return transporter.sendMail({
-//         from: `"Servidor de pruebas" <${process.env.SMTP_USER}>`, // sender address
-//         to: to, // esto es el destinatario
-//         subject: "Email de prueba desde Node.js", // esto es el asunto
-//         text: "Hola! Este es un email de prueba enviado desde Node.js usando Nodemailer.", // el cuerpo del email en texto plano
-//         html: "<b>Hola! Este es un email de prueba enviado desde Node.js usando Nodemailer.</b>" // el cuerpo del email en HTML
-//     });
-// }
+
 
 const enviarRecuperacionPassword = async (email, link) =>{
     const htmlTemplate =`
